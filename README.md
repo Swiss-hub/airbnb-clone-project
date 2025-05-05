@@ -15,4 +15,4 @@ It involves a deep dive into full-stack development, focusing on backend systems
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-//Django *: a web framework for building RESTful APIs*
+/Django/ *: a web framework for building RESTful APIs*
