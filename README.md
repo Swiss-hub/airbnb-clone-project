@@ -16,7 +16,11 @@ It involves a deep dive into full-stack development, focusing on backend systems
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 Django: *a web framework for building RESTful APIs*
+
 GraphQL: *a query language for APIs, allows developers to make requests to fetch data from multiple data sources with a single API call*
+
 PostgreSQL: *communicates with the database servers using objects codes. It's an (ORDMBS)*
+
 Docker: *an open-source platform that automates the deployment, packaging and running of applications with containers.*
+
 Github: *allows developers to create, manage and share codes.*
