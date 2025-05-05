@@ -9,4 +9,4 @@ It involves a deep dive into full-stack development, focusing on backend systems
 #
 
 # Technology Stack
-https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green)
