@@ -24,3 +24,20 @@ PostgreSQL: *communicates with the database servers using objects codes. It's an
 Docker: *an open-source platform that automates the deployment, packaging and running of applications with containers.*
 
 Github: *allows developers to create, manage and share codes.*
+
+
+# Database Design Overview
+
+*Users*
+
+*Properties*
+
+*Bookings*
+
+*Reviews*
+
+*Payments*
+
+#Feature Breakdown
+
+*User Management
