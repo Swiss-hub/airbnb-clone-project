@@ -3,7 +3,7 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security.
 
 #Team Roles And Responsibilities.
-#
+# ~
 #
 #
 #
@@ -26,7 +26,7 @@ Docker: *an open-source platform that automates the deployment, packaging and ru
 Github: *allows developers to create, manage and share codes.*
 
 
-# Database Design Overview
+# Database Design 
 
 *Users*
 
