@@ -47,8 +47,7 @@ Github: *For version control and collaboration*
 
 # Database Design 
 
-##USERS
-== *Represents the platform’s users (both guests and hosts)*
+USERS == *Represents the platform’s users (both guests and hosts)*
 
 => *id (Primary Key)*
 
@@ -60,13 +59,57 @@ Github: *For version control and collaboration*
 
 => *is_host (Boolean to differentiate between guest and host)*
 
-###PROPERTIES
+PROPERTIES == *Represents a listing added by a host.*
 
-*Bookings*
+=> *id (Primary Key)*
 
-*Reviews*
+=> *user_id (Foreign Key to User)*
 
-*Payments*
+=> *title*
+
+=> *description*
+
+=> *location*
+
+=> *price_per_night*
+
+BOOKINGS == *Represents a reservation made by a guest.*
+
+=> *id (Primary Key)*
+
+=> *user_id (Foreign Key to User – the guest)*
+
+=> *property_id (Foreign Key to Property)*
+
+=> *check_in_date*
+
+=> *check_out_date*
+
+=> *status (e.g., pending, confirmed, cancelled)*
+
+REVIEWS == *Represents feedback left by a guest after a stay.*
+
+=> *id (Primary Key)*
+
+=> *user_id (Foreign Key to User)*
+
+=> *property_id (Foreign Key to Property)*
+
+=> *rating (e.g., 1–5 stars)*
+
+=> *comments*
+
+PAYMENTS == *Represents a transaction for a booking.*
+
+=> *id (Primary Key)*
+
+=> *booking_id (Foreign Key to Booking)*
+
+=> *amount*
+
+=> *payment_method*
+
+=> *payment_status (e.g., completed, failed)*
 
 # Feature Breakdown
 
