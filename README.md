@@ -47,20 +47,20 @@ Github: *For version control and collaboration*
 
 # Database Design 
 
-*#Users*
-== Represents the platform’s users (both guests and hosts).
+##USERS
+== *Represents the platform’s users (both guests and hosts)*
 
-=>id (Primary Key)
+=> *id (Primary Key)*
 
-=>username
+=> *username*
 
-=>email
+=> *email*
 
-=>password (hashed)
+=> *password (hashed)*
 
-=>is_host (Boolean to differentiate between guest and host)
+=> *is_host (Boolean to differentiate between guest and host)*
 
-*Properties*
+###PROPERTIES
 
 *Bookings*
 
