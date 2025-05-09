@@ -25,21 +25,40 @@ Security Engineer
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 HTML: *markup language for structuring pages*
-CSS3 – Styling for layout and responsiveness
+
+CSS3 : *Styling for layout and responsiveness*
+
+JavaScript: *(Vanilla or with a framework like React.js) – For interactivity and dynamic components*
+
+Bootstrap: *Optional frameworks for responsive design*
+
+Python: *Core programming language*
+
 Django: *a web framework for building RESTful APIs*
 
 GraphQL: *a query language for APIs, allows developers to make requests to fetch data from multiple data sources with a single API call*
 
 PostgreSQL: *communicates with the database servers using objects codes. It's an (ORDMBS)*
 
-Docker: *an open-source platform that automates the deployment, packaging and running of applications with containers.*
+Docker: *Containerization for consistent development and deployment*
 
-Github: *allows developers to create, manage and share codes.*
+Github: *For version control and collaboration*
 
 
 # Database Design 
 
-*Users*
+*# Users*
+Represents the platform’s users (both guests and hosts).
+
+id (Primary Key)
+
+username
+
+email
+
+password (hashed)
+
+is_host (Boolean to differentiate between guest and host)
 
 *Properties*
 
