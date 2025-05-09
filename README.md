@@ -24,6 +24,8 @@ Security Engineer
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
+HTML: *markup language for structuring pages*
+CSS3 – Styling for layout and responsiveness
 Django: *a web framework for building RESTful APIs*
 
 GraphQL: *a query language for APIs, allows developers to make requests to fetch data from multiple data sources with a single API call*
