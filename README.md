@@ -45,7 +45,7 @@ Docker: *Containerization for consistent development and deployment*
 Github: *For version control and collaboration*
 
 
-# Database Design 
+# Database Design Overview
 
 USERS == *Represents the platform’s users (both guests and hosts)*
 
@@ -111,9 +111,23 @@ PAYMENTS == *Represents a transaction for a booking.*
 
 => *payment_status (e.g., completed, failed)*
 
-# Feature Breakdown
+🔁 Entity Relationships
+A User can own multiple Properties (if they are a host).
 
-*User Management*
+A User can make multiple Bookings.
+
+A Property can have multiple Bookings and Reviews.
+
+A Booking belongs to one User (guest) and one Property.
+
+A Payment is linked to one Booking.
+
+A Review is linked to one User and one Property.
+
+# ✨ Feature Breakdown
+
+👤 USER MANAGEMENT == *Users can register, log in, and manage their profiles. Hosts and guests are differentiated by role, allowing for customized access and functionality depending on the user type.*
+
 *Property Management*
 *Booking System*
 
