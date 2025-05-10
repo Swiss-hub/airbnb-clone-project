@@ -12,7 +12,7 @@ Project Manager
 QA Tester
 Security Engineer
 
-# Technology Stack
+# 🧰 Technology Stack
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
@@ -45,9 +45,9 @@ Docker: *Containerization for consistent development and deployment*
 Github: *For version control and collaboration*
 
 
-# Database Design Overview
+# 🗄️ Database Design
 
-USERS == *Represents the platform’s users (both guests and hosts)*
+1. USERS == *Represents the platform’s users (both guests and hosts)*
 
 => *id (Primary Key)*
 
@@ -60,7 +60,7 @@ USERS == *Represents the platform’s users (both guests and hosts)*
 => *is_host (Boolean to differentiate between guest and host)*
 
 
-PROPERTIES == *Represents a listing added by a host.*
+2. PROPERTIES == *Represents a listing added by a host.*
 
 => *id (Primary Key)*
 
@@ -75,7 +75,7 @@ PROPERTIES == *Represents a listing added by a host.*
 => *price_per_night*
 
 
-BOOKINGS == *Represents a reservation made by a guest.*
+3. BOOKINGS == *Represents a reservation made by a guest.*
 
 => *id (Primary Key)*
 
@@ -90,7 +90,7 @@ BOOKINGS == *Represents a reservation made by a guest.*
 => *status (e.g., pending, confirmed, cancelled)*
 
 
-REVIEWS == *Represents feedback left by a guest after a stay.*
+4. REVIEWS == *Represents feedback left by a guest after a stay.*
 
 => *id (Primary Key)*
 
@@ -103,7 +103,7 @@ REVIEWS == *Represents feedback left by a guest after a stay.*
 => *comments*
 
 
-PAYMENTS == *Represents a transaction for a booking.*
+5. PAYMENTS == *Represents a transaction for a booking.*
 
 => *id (Primary Key)*
 
@@ -161,37 +161,37 @@ A Review is linked to one User and one Property.
 
 # 🔐 API SECURITY
 
-1. Authentication
+1. AUTHENTICATION
 
 *Verifies the identity of users through secure login mechanisms (e.g., token-based authentication using JWT).
 Ensures that only registered users can access protected routes and their personal data.*
 
-2. Authorization
+2. AUTHORIZATION
 
 *Determines what actions a user is allowed to perform based on their role (e.g., host vs guest).
 Prevents unauthorized access to resources—like a guest trying to edit or delete another user’s property.*
 
-3. Input Validation & Data Sanitization
+3. IINPUT VALIDATION & DATA SANITIZATION
 
 *Ensures that all user inputs are checked for validity and malicious code is filtered out.
 Protects against injection attacks (e.g., SQL injection, XSS) that could compromise the system.*
 
-4. Rate Limiting & Throttling
+4. RATE LIMITING & THROTTLING
 
 *Limits the number of requests a user can make within a certain timeframe.
 Protects the API from abuse (e.g., brute-force attacks) and ensures fair usage of resources.*
 
-5. Secure Password Storage
+5. SECURE PASSWORD STORAGE
 
 *Uses hashing algorithms like bcrypt to securely store user passwords.
 Prevents plain-text password exposure in case of a database breach.*
 
-6. HTTPS & Secure Headers
+6. HTTPS & SECURE HEADERS
 
 *All API traffic is encrypted via HTTPS, and secure headers (e.g., CORS, CSP) are configured.
 Protects data in transit and prevents various client-side attacks.*
 
-7. Token Expiry & Refresh
+7. TOKEN EXPIRY & REFRESH
 
 *Access tokens have expiration times and can be refreshed securely.
 Reduces risk if a token is compromised, ensuring it cannot be used indefinitely.*
