@@ -135,27 +135,27 @@ A Review is linked to one User and one Property.
 
 *Users can register, log in, and manage their profiles. Hosts and guests are differentiated by role, allowing for customized access and functionality depending on the user type.*
 
-🏘️ Property Management
+🏘️ PROPERTY MANAGEMENT
 
 *Hosts can list new properties by providing key details such as title, description, location, price, and images. They can also update or delete their listings, allowing full control over what’s available to guests.*
 
-📅 Booking System
+📅 BOOKING SYSTEM
 
 *Guests can browse available properties and make bookings by selecting check-in and check-out dates. The system checks for date conflicts and manages booking status (e.g., pending, confirmed, cancelled).*
 
-💬 Reviews & Ratings
+💬 REVIEWS & RATINGS
 
 *Guests can leave reviews and star ratings after their stay. This helps future users make informed decisions and encourages accountability from hosts.*
 
-💳 Payment Integration (Optional/Future Feature)
+💳 PAYMENT INTEGRATION
 
 *Simulates or integrates payment processing for bookings. It ensures that each transaction is tracked and associated with the correct user and property booking.*
 
-🔍 Search & Filter (Optional/Future Feature)
+🔍 SEARCH & FILTER
 
 *Allows users to search for properties by location, price range, and availability. Improves user experience by helping guests find listings that meet their needs quickly.*
 
-🧾 Admin Dashboard (Optional/Future Feature)
+🧾 ADMIN DASHBOARD
 
 *An admin panel for managing users, listings, and reported content. Helps in monitoring activity and enforcing platform rules.*
 
