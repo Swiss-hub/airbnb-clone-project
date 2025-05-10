@@ -59,6 +59,7 @@ USERS == *Represents the platform’s users (both guests and hosts)*
 
 => *is_host (Boolean to differentiate between guest and host)*
 
+
 PROPERTIES == *Represents a listing added by a host.*
 
 => *id (Primary Key)*
@@ -72,6 +73,7 @@ PROPERTIES == *Represents a listing added by a host.*
 => *location*
 
 => *price_per_night*
+
 
 BOOKINGS == *Represents a reservation made by a guest.*
 
@@ -87,6 +89,7 @@ BOOKINGS == *Represents a reservation made by a guest.*
 
 => *status (e.g., pending, confirmed, cancelled)*
 
+
 REVIEWS == *Represents feedback left by a guest after a stay.*
 
 => *id (Primary Key)*
@@ -98,6 +101,7 @@ REVIEWS == *Represents feedback left by a guest after a stay.*
 => *rating (e.g., 1–5 stars)*
 
 => *comments*
+
 
 PAYMENTS == *Represents a transaction for a booking.*
 
@@ -124,13 +128,60 @@ A Payment is linked to one Booking.
 
 A Review is linked to one User and one Property.
 
+
 # ✨ Feature Breakdown
 
-👤 USER MANAGEMENT == *Users can register, log in, and manage their profiles. Hosts and guests are differentiated by role, allowing for customized access and functionality depending on the user type.*
+👤 USER MANAGEMENT
+*Users can register, log in, and manage their profiles. Hosts and guests are differentiated by role, allowing for customized access and functionality depending on the user type.*
 
-*Property Management*
-*Booking System*
+🏘️ Property Management
+*Hosts can list new properties by providing key details such as title, description, location, price, and images. They can also update or delete their listings, allowing full control over what’s available to guests.*
 
-# API Security
+📅 Booking System
+*Guests can browse available properties and make bookings by selecting check-in and check-out dates. The system checks for date conflicts and manages booking status (e.g., pending, confirmed, cancelled).*
 
-# CI/CD Pipeline
+💬 Reviews & Ratings
+*Guests can leave reviews and star ratings after their stay. This helps future users make informed decisions and encourages accountability from hosts.*
+
+💳 Payment Integration (Optional/Future Feature)
+*Simulates or integrates payment processing for bookings. It ensures that each transaction is tracked and associated with the correct user and property booking.*
+
+🔍 Search & Filter (Optional/Future Feature)
+*Allows users to search for properties by location, price range, and availability. Improves user experience by helping guests find listings that meet their needs quickly.*
+
+🧾 Admin Dashboard (Optional/Future Feature)
+*An admin panel for managing users, listings, and reported content. Helps in monitoring activity and enforcing platform rules.*
+
+# 🔐 API SECURITY
+
+1. Authentication
+*Verifies the identity of users through secure login mechanisms (e.g., token-based authentication using JWT).
+Ensures that only registered users can access protected routes and their personal data.*
+
+2. Authorization
+*Determines what actions a user is allowed to perform based on their role (e.g., host vs guest).
+Prevents unauthorized access to resources—like a guest trying to edit or delete another user’s property.*
+
+3. Input Validation & Data Sanitization
+*Ensures that all user inputs are checked for validity and malicious code is filtered out.
+Protects against injection attacks (e.g., SQL injection, XSS) that could compromise the system.*
+
+4. Rate Limiting & Throttling
+*Limits the number of requests a user can make within a certain timeframe.
+Protects the API from abuse (e.g., brute-force attacks) and ensures fair usage of resources.*
+
+5. Secure Password Storage
+*Uses hashing algorithms like bcrypt to securely store user passwords.
+Prevents plain-text password exposure in case of a database breach.*
+
+6. HTTPS & Secure Headers
+*All API traffic is encrypted via HTTPS, and secure headers (e.g., CORS, CSP) are configured.
+Protects data in transit and prevents various client-side attacks.*
+
+7. Token Expiry & Refresh
+*Access tokens have expiration times and can be refreshed securely.
+Reduces risk if a token is compromised, ensuring it cannot be used indefinitely.*
+
+# 🚀 CI/CD PIPELINE 
+
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of testing, building, and deploying applications. It ensures that changes to the codebase are integrated frequently and delivered to production reliably and quickly.
