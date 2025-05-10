@@ -199,3 +199,11 @@ Reduces risk if a token is compromised, ensuring it cannot be used indefinitely.
 # 🚀 CI/CD PIPELINE 
 
 CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of testing, building, and deploying applications. It ensures that changes to the codebase are integrated frequently and delivered to production reliably and quickly.
+
+🛠️ Tools Used (or Planned)
+
+GitHub Actions – *Automates testing, building, and deployment workflows directly from GitHub.*
+
+Docker – *Containerizes the application for consistent and portable deployment environments.*
+
+AWS – *Platforms for hosting the deployed application.*
