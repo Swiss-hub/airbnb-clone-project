@@ -1,0 +1,7 @@
+# Ignore all txt files
+ *.txt
+
+ # But track this one specifically
+
+ # Ignore all files in the build/ directory
+ build/
