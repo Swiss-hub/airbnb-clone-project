@@ -2,7 +2,7 @@
 The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. 
 It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security.
 
-Project Roles and Responsibilities
+# Project Roles and Responsibilities
 Frontend Developer
 Backend Developer
 Database Administrator
@@ -24,7 +24,6 @@ Security Engineer
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
-UI Component Patterns
 
 HTML: *markup language for structuring pages*
 
@@ -45,6 +44,8 @@ PostgreSQL: *communicates with the database servers using objects codes. It's an
 Docker: *Containerization for consistent development and deployment*
 
 Github: *For version control and collaboration*
+
+# UI Component Patterns
 
 
 # 🗄️ Database Design
